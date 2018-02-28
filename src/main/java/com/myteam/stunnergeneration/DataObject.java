@@ -88,6 +88,9 @@ public class DataObject implements java.io.Serializable {
 
 	private java.lang.String stringRadioGroup;
 
+	@javax.persistence.ManyToOne(cascade = {javax.persistence.CascadeType.ALL}, fetch = javax.persistence.FetchType.EAGER)
+	private com.myteam.stunnergeneration.NestedDataObject nestedDataObject;
+
 	public DataObject() {
 	}
 
@@ -401,6 +404,15 @@ public class DataObject implements java.io.Serializable {
 		this.stringRadioGroup = stringRadioGroup;
 	}
 
+	public com.myteam.stunnergeneration.NestedDataObject getNestedDataObject() {
+		return this.nestedDataObject;
+	}
+
+	public void setNestedDataObject(
+			com.myteam.stunnergeneration.NestedDataObject nestedDataObject) {
+		this.nestedDataObject = nestedDataObject;
+	}
+
 	public DataObject(java.lang.Long id, java.lang.String stringTextBox,
 			java.lang.Character characterTextBox,
 			java.lang.String stringTextArea,
@@ -425,7 +437,8 @@ public class DataObject implements java.io.Serializable {
 			java.lang.Byte byteRadioGroup, java.lang.Double doubleRadioGroup,
 			java.lang.Float floatRadioGroup,
 			java.lang.Integer integerRadioGroup, java.lang.Long longRadioGroup,
-			java.lang.Short shortRadioGroup, java.lang.String stringRadioGroup) {
+			java.lang.Short shortRadioGroup, java.lang.String stringRadioGroup,
+			com.myteam.stunnergeneration.NestedDataObject nestedDataObject) {
 		this.id = id;
 		this.stringTextBox = stringTextBox;
 		this.characterTextBox = characterTextBox;
@@ -464,6 +477,7 @@ public class DataObject implements java.io.Serializable {
 		this.longRadioGroup = longRadioGroup;
 		this.shortRadioGroup = shortRadioGroup;
 		this.stringRadioGroup = stringRadioGroup;
+		this.nestedDataObject = nestedDataObject;
 	}
 
 }
