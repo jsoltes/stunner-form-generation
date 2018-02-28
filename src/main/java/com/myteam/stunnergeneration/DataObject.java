@@ -91,6 +91,9 @@ public class DataObject implements java.io.Serializable {
 	@javax.persistence.ManyToOne(cascade = {javax.persistence.CascadeType.ALL}, fetch = javax.persistence.FetchType.EAGER)
 	private com.myteam.stunnergeneration.NestedDataObject nestedDataObject;
 
+	@javax.persistence.OneToMany(cascade = {javax.persistence.CascadeType.ALL}, fetch = javax.persistence.FetchType.EAGER)
+	private java.util.List<com.myteam.stunnergeneration.NestedDataObject> multipleSubform;
+
 	public DataObject() {
 	}
 
@@ -413,32 +416,56 @@ public class DataObject implements java.io.Serializable {
 		this.nestedDataObject = nestedDataObject;
 	}
 
-	public DataObject(java.lang.Long id, java.lang.String stringTextBox,
+	public java.util.List<com.myteam.stunnergeneration.NestedDataObject> getMultipleSubform() {
+		return this.multipleSubform;
+	}
+
+	public void setMultipleSubform(
+			java.util.List<com.myteam.stunnergeneration.NestedDataObject> multipleSubform) {
+		this.multipleSubform = multipleSubform;
+	}
+
+	public DataObject(
+			java.lang.Long id,
+			java.lang.String stringTextBox,
 			java.lang.Character characterTextBox,
 			java.lang.String stringTextArea,
 			java.math.BigInteger bigIntegerIntegerBox,
-			java.lang.Byte byteIntegerBox, java.lang.Integer integerIntegerBox,
-			java.lang.Long longIntegerBox, java.lang.Short shortIntegerBox,
+			java.lang.Byte byteIntegerBox,
+			java.lang.Integer integerIntegerBox,
+			java.lang.Long longIntegerBox,
+			java.lang.Short shortIntegerBox,
 			java.math.BigDecimal bigDecimalDecimalBox,
-			java.lang.Double doubleDecimalBox, java.lang.Float floatDecimalBox,
-			java.lang.Boolean booleanCheckBox, java.util.Date dateDatePicker,
+			java.lang.Double doubleDecimalBox,
+			java.lang.Float floatDecimalBox,
+			java.lang.Boolean booleanCheckBox,
+			java.util.Date dateDatePicker,
 			java.time.LocalDate localDateDatePicker,
 			java.time.LocalDateTime localDateTimeDatePicker,
 			java.time.LocalTime localTimeDatePicker,
 			java.time.OffsetDateTime offsetDateTimeDatePicker,
-			java.lang.Double doubleSlider, java.lang.Integer integerSlider,
+			java.lang.Double doubleSlider,
+			java.lang.Integer integerSlider,
 			java.math.BigDecimal bigDecimalListBox,
-			java.math.BigInteger bigIntegerListBox, java.lang.Byte byteListBox,
-			java.lang.Double doubleListBox, java.lang.Float floatListBox,
-			java.lang.Integer integerListBox, java.lang.Long longListBox,
-			java.lang.Short shortListBox, java.lang.String stringListBox,
+			java.math.BigInteger bigIntegerListBox,
+			java.lang.Byte byteListBox,
+			java.lang.Double doubleListBox,
+			java.lang.Float floatListBox,
+			java.lang.Integer integerListBox,
+			java.lang.Long longListBox,
+			java.lang.Short shortListBox,
+			java.lang.String stringListBox,
 			java.math.BigDecimal bigDecimalRadioGroup,
 			java.math.BigInteger bigIntegerRadioGroup,
-			java.lang.Byte byteRadioGroup, java.lang.Double doubleRadioGroup,
+			java.lang.Byte byteRadioGroup,
+			java.lang.Double doubleRadioGroup,
 			java.lang.Float floatRadioGroup,
-			java.lang.Integer integerRadioGroup, java.lang.Long longRadioGroup,
-			java.lang.Short shortRadioGroup, java.lang.String stringRadioGroup,
-			com.myteam.stunnergeneration.NestedDataObject nestedDataObject) {
+			java.lang.Integer integerRadioGroup,
+			java.lang.Long longRadioGroup,
+			java.lang.Short shortRadioGroup,
+			java.lang.String stringRadioGroup,
+			com.myteam.stunnergeneration.NestedDataObject nestedDataObject,
+			java.util.List<com.myteam.stunnergeneration.NestedDataObject> multipleSubform) {
 		this.id = id;
 		this.stringTextBox = stringTextBox;
 		this.characterTextBox = characterTextBox;
@@ -478,6 +505,7 @@ public class DataObject implements java.io.Serializable {
 		this.shortRadioGroup = shortRadioGroup;
 		this.stringRadioGroup = stringRadioGroup;
 		this.nestedDataObject = nestedDataObject;
+		this.multipleSubform = multipleSubform;
 	}
 
 }
