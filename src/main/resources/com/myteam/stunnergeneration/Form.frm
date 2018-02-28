@@ -1,0 +1,1 @@
+{"id":"b3876921-80c7-4905-a5ae-a8dd0cbf0120","name":"Form","model":{"className":"com.myteam.stunnergeneration.DataObject","name":"DataObject","properties":[],"formModelType":"org.kie.workbench.common.forms.data.modeller.model.DataObjectFormModel"},"fields":[],"layoutTemplate":{"version":2,"style":"FLUID","layoutProperties":{},"rows":[]}}
