@@ -14,23 +14,79 @@ public class DataObject implements java.io.Serializable {
 	@javax.persistence.SequenceGenerator(sequenceName = "DATAOBJECT_ID_SEQ", name = "DATAOBJECT_ID_GENERATOR")
 	private java.lang.Long id;
 
-	private java.math.BigDecimal BIGDECIMAL;
+	private java.lang.String stringTextBox;
 
-	private java.math.BigInteger BIGINTEGER;
+	private java.lang.Character characterTextBox;
 
-	private java.lang.Byte BYTE;
+	private java.lang.String stringTextArea;
 
-	private java.lang.Double DOUBLE;
+	private java.math.BigInteger bigIntegerIntegerBox;
 
-	private java.lang.Float FLOAT;
+	private java.lang.Byte byteIntegerBox;
 
-	private java.lang.Integer INTEGER;
+	private java.lang.Integer integerIntegerBox;
 
-	private java.lang.Long LONG;
+	private java.lang.Long longIntegerBox;
 
-	private java.lang.Short SHORT;
+	private java.lang.Short shortIntegerBox;
 
-	private java.lang.String STRING;
+	private java.math.BigDecimal bigDecimalDecimalBox;
+
+	private java.lang.Double doubleDecimalBox;
+
+	private java.lang.Float floatDecimalBox;
+
+	private java.lang.Boolean booleanCheckBox;
+
+	private java.util.Date dateDatePicker;
+
+	private java.time.LocalDate localDateDatePicker;
+
+	private java.time.LocalDateTime localDateTimeDatePicker;
+
+	private java.time.LocalTime localTimeDatePicker;
+
+	private java.time.OffsetDateTime offsetDateTimeDatePicker;
+
+	private java.lang.Double doubleSlider;
+
+	private java.lang.Integer integerSlider;
+
+	private java.math.BigDecimal bigDecimalListBox;
+
+	private java.math.BigInteger bigIntegerListBox;
+
+	private java.lang.Byte byteListBox;
+
+	private java.lang.Double doubleListBox;
+
+	private java.lang.Float floatListBox;
+
+	private java.lang.Integer integerListBox;
+
+	private java.lang.Long longListBox;
+
+	private java.lang.Short shortListBox;
+
+	private java.lang.String stringListBox;
+
+	private java.math.BigDecimal bigDecimalRadioGroup;
+
+	private java.math.BigInteger bigIntegerRadioGroup;
+
+	private java.lang.Byte byteRadioGroup;
+
+	private java.lang.Double doubleRadioGroup;
+
+	private java.lang.Float floatRadioGroup;
+
+	private java.lang.Integer integerRadioGroup;
+
+	private java.lang.Long longRadioGroup;
+
+	private java.lang.Short shortRadioGroup;
+
+	private java.lang.String stringRadioGroup;
 
 	public DataObject() {
 	}
@@ -43,93 +99,371 @@ public class DataObject implements java.io.Serializable {
 		this.id = id;
 	}
 
-	public java.math.BigDecimal getBIGDECIMAL() {
-		return this.BIGDECIMAL;
+	public java.lang.String getStringTextBox() {
+		return this.stringTextBox;
 	}
 
-	public void setBIGDECIMAL(java.math.BigDecimal BIGDECIMAL) {
-		this.BIGDECIMAL = BIGDECIMAL;
+	public void setStringTextBox(java.lang.String stringTextBox) {
+		this.stringTextBox = stringTextBox;
 	}
 
-	public java.math.BigInteger getBIGINTEGER() {
-		return this.BIGINTEGER;
+	public java.lang.Character getCharacterTextBox() {
+		return this.characterTextBox;
 	}
 
-	public void setBIGINTEGER(java.math.BigInteger BIGINTEGER) {
-		this.BIGINTEGER = BIGINTEGER;
+	public void setCharacterTextBox(java.lang.Character characterTextBox) {
+		this.characterTextBox = characterTextBox;
 	}
 
-	public java.lang.Byte getBYTE() {
-		return this.BYTE;
+	public java.lang.String getStringTextArea() {
+		return this.stringTextArea;
 	}
 
-	public void setBYTE(java.lang.Byte BYTE) {
-		this.BYTE = BYTE;
+	public void setStringTextArea(java.lang.String stringTextArea) {
+		this.stringTextArea = stringTextArea;
 	}
 
-	public java.lang.Double getDOUBLE() {
-		return this.DOUBLE;
+	public java.math.BigInteger getBigIntegerIntegerBox() {
+		return this.bigIntegerIntegerBox;
 	}
 
-	public void setDOUBLE(java.lang.Double DOUBLE) {
-		this.DOUBLE = DOUBLE;
+	public void setBigIntegerIntegerBox(
+			java.math.BigInteger bigIntegerIntegerBox) {
+		this.bigIntegerIntegerBox = bigIntegerIntegerBox;
 	}
 
-	public java.lang.Float getFLOAT() {
-		return this.FLOAT;
+	public java.lang.Byte getByteIntegerBox() {
+		return this.byteIntegerBox;
 	}
 
-	public void setFLOAT(java.lang.Float FLOAT) {
-		this.FLOAT = FLOAT;
+	public void setByteIntegerBox(java.lang.Byte byteIntegerBox) {
+		this.byteIntegerBox = byteIntegerBox;
 	}
 
-	public java.lang.Integer getINTEGER() {
-		return this.INTEGER;
+	public java.lang.Integer getIntegerIntegerBox() {
+		return this.integerIntegerBox;
 	}
 
-	public void setINTEGER(java.lang.Integer INTEGER) {
-		this.INTEGER = INTEGER;
+	public void setIntegerIntegerBox(java.lang.Integer integerIntegerBox) {
+		this.integerIntegerBox = integerIntegerBox;
 	}
 
-	public java.lang.Long getLONG() {
-		return this.LONG;
+	public java.lang.Long getLongIntegerBox() {
+		return this.longIntegerBox;
 	}
 
-	public void setLONG(java.lang.Long LONG) {
-		this.LONG = LONG;
+	public void setLongIntegerBox(java.lang.Long longIntegerBox) {
+		this.longIntegerBox = longIntegerBox;
 	}
 
-	public java.lang.Short getSHORT() {
-		return this.SHORT;
+	public java.lang.Short getShortIntegerBox() {
+		return this.shortIntegerBox;
 	}
 
-	public void setSHORT(java.lang.Short SHORT) {
-		this.SHORT = SHORT;
+	public void setShortIntegerBox(java.lang.Short shortIntegerBox) {
+		this.shortIntegerBox = shortIntegerBox;
 	}
 
-	public java.lang.String getSTRING() {
-		return this.STRING;
+	public java.math.BigDecimal getBigDecimalDecimalBox() {
+		return this.bigDecimalDecimalBox;
 	}
 
-	public void setSTRING(java.lang.String STRING) {
-		this.STRING = STRING;
+	public void setBigDecimalDecimalBox(
+			java.math.BigDecimal bigDecimalDecimalBox) {
+		this.bigDecimalDecimalBox = bigDecimalDecimalBox;
 	}
 
-	public DataObject(java.lang.Long id, java.math.BigDecimal BIGDECIMAL,
-			java.math.BigInteger BIGINTEGER, java.lang.Byte BYTE,
-			java.lang.Double DOUBLE, java.lang.Float FLOAT,
-			java.lang.Integer INTEGER, java.lang.Long LONG,
-			java.lang.Short SHORT, java.lang.String STRING) {
+	public java.lang.Double getDoubleDecimalBox() {
+		return this.doubleDecimalBox;
+	}
+
+	public void setDoubleDecimalBox(java.lang.Double doubleDecimalBox) {
+		this.doubleDecimalBox = doubleDecimalBox;
+	}
+
+	public java.lang.Float getFloatDecimalBox() {
+		return this.floatDecimalBox;
+	}
+
+	public void setFloatDecimalBox(java.lang.Float floatDecimalBox) {
+		this.floatDecimalBox = floatDecimalBox;
+	}
+
+	public java.lang.Boolean getBooleanCheckBox() {
+		return this.booleanCheckBox;
+	}
+
+	public void setBooleanCheckBox(java.lang.Boolean booleanCheckBox) {
+		this.booleanCheckBox = booleanCheckBox;
+	}
+
+	public java.util.Date getDateDatePicker() {
+		return this.dateDatePicker;
+	}
+
+	public void setDateDatePicker(java.util.Date dateDatePicker) {
+		this.dateDatePicker = dateDatePicker;
+	}
+
+	public java.time.LocalDate getLocalDateDatePicker() {
+		return this.localDateDatePicker;
+	}
+
+	public void setLocalDateDatePicker(java.time.LocalDate localDateDatePicker) {
+		this.localDateDatePicker = localDateDatePicker;
+	}
+
+	public java.time.LocalDateTime getLocalDateTimeDatePicker() {
+		return this.localDateTimeDatePicker;
+	}
+
+	public void setLocalDateTimeDatePicker(
+			java.time.LocalDateTime localDateTimeDatePicker) {
+		this.localDateTimeDatePicker = localDateTimeDatePicker;
+	}
+
+	public java.time.LocalTime getLocalTimeDatePicker() {
+		return this.localTimeDatePicker;
+	}
+
+	public void setLocalTimeDatePicker(java.time.LocalTime localTimeDatePicker) {
+		this.localTimeDatePicker = localTimeDatePicker;
+	}
+
+	public java.time.OffsetDateTime getOffsetDateTimeDatePicker() {
+		return this.offsetDateTimeDatePicker;
+	}
+
+	public void setOffsetDateTimeDatePicker(
+			java.time.OffsetDateTime offsetDateTimeDatePicker) {
+		this.offsetDateTimeDatePicker = offsetDateTimeDatePicker;
+	}
+
+	public java.lang.Double getDoubleSlider() {
+		return this.doubleSlider;
+	}
+
+	public void setDoubleSlider(java.lang.Double doubleSlider) {
+		this.doubleSlider = doubleSlider;
+	}
+
+	public java.lang.Integer getIntegerSlider() {
+		return this.integerSlider;
+	}
+
+	public void setIntegerSlider(java.lang.Integer integerSlider) {
+		this.integerSlider = integerSlider;
+	}
+
+	public java.math.BigDecimal getBigDecimalListBox() {
+		return this.bigDecimalListBox;
+	}
+
+	public void setBigDecimalListBox(java.math.BigDecimal bigDecimalListBox) {
+		this.bigDecimalListBox = bigDecimalListBox;
+	}
+
+	public java.math.BigInteger getBigIntegerListBox() {
+		return this.bigIntegerListBox;
+	}
+
+	public void setBigIntegerListBox(java.math.BigInteger bigIntegerListBox) {
+		this.bigIntegerListBox = bigIntegerListBox;
+	}
+
+	public java.lang.Byte getByteListBox() {
+		return this.byteListBox;
+	}
+
+	public void setByteListBox(java.lang.Byte byteListBox) {
+		this.byteListBox = byteListBox;
+	}
+
+	public java.lang.Double getDoubleListBox() {
+		return this.doubleListBox;
+	}
+
+	public void setDoubleListBox(java.lang.Double doubleListBox) {
+		this.doubleListBox = doubleListBox;
+	}
+
+	public java.lang.Float getFloatListBox() {
+		return this.floatListBox;
+	}
+
+	public void setFloatListBox(java.lang.Float floatListBox) {
+		this.floatListBox = floatListBox;
+	}
+
+	public java.lang.Integer getIntegerListBox() {
+		return this.integerListBox;
+	}
+
+	public void setIntegerListBox(java.lang.Integer integerListBox) {
+		this.integerListBox = integerListBox;
+	}
+
+	public java.lang.Long getLongListBox() {
+		return this.longListBox;
+	}
+
+	public void setLongListBox(java.lang.Long longListBox) {
+		this.longListBox = longListBox;
+	}
+
+	public java.lang.Short getShortListBox() {
+		return this.shortListBox;
+	}
+
+	public void setShortListBox(java.lang.Short shortListBox) {
+		this.shortListBox = shortListBox;
+	}
+
+	public java.lang.String getStringListBox() {
+		return this.stringListBox;
+	}
+
+	public void setStringListBox(java.lang.String stringListBox) {
+		this.stringListBox = stringListBox;
+	}
+
+	public java.math.BigDecimal getBigDecimalRadioGroup() {
+		return this.bigDecimalRadioGroup;
+	}
+
+	public void setBigDecimalRadioGroup(
+			java.math.BigDecimal bigDecimalRadioGroup) {
+		this.bigDecimalRadioGroup = bigDecimalRadioGroup;
+	}
+
+	public java.math.BigInteger getBigIntegerRadioGroup() {
+		return this.bigIntegerRadioGroup;
+	}
+
+	public void setBigIntegerRadioGroup(
+			java.math.BigInteger bigIntegerRadioGroup) {
+		this.bigIntegerRadioGroup = bigIntegerRadioGroup;
+	}
+
+	public java.lang.Byte getByteRadioGroup() {
+		return this.byteRadioGroup;
+	}
+
+	public void setByteRadioGroup(java.lang.Byte byteRadioGroup) {
+		this.byteRadioGroup = byteRadioGroup;
+	}
+
+	public java.lang.Double getDoubleRadioGroup() {
+		return this.doubleRadioGroup;
+	}
+
+	public void setDoubleRadioGroup(java.lang.Double doubleRadioGroup) {
+		this.doubleRadioGroup = doubleRadioGroup;
+	}
+
+	public java.lang.Float getFloatRadioGroup() {
+		return this.floatRadioGroup;
+	}
+
+	public void setFloatRadioGroup(java.lang.Float floatRadioGroup) {
+		this.floatRadioGroup = floatRadioGroup;
+	}
+
+	public java.lang.Integer getIntegerRadioGroup() {
+		return this.integerRadioGroup;
+	}
+
+	public void setIntegerRadioGroup(java.lang.Integer integerRadioGroup) {
+		this.integerRadioGroup = integerRadioGroup;
+	}
+
+	public java.lang.Long getLongRadioGroup() {
+		return this.longRadioGroup;
+	}
+
+	public void setLongRadioGroup(java.lang.Long longRadioGroup) {
+		this.longRadioGroup = longRadioGroup;
+	}
+
+	public java.lang.Short getShortRadioGroup() {
+		return this.shortRadioGroup;
+	}
+
+	public void setShortRadioGroup(java.lang.Short shortRadioGroup) {
+		this.shortRadioGroup = shortRadioGroup;
+	}
+
+	public java.lang.String getStringRadioGroup() {
+		return this.stringRadioGroup;
+	}
+
+	public void setStringRadioGroup(java.lang.String stringRadioGroup) {
+		this.stringRadioGroup = stringRadioGroup;
+	}
+
+	public DataObject(java.lang.Long id, java.lang.String stringTextBox,
+			java.lang.Character characterTextBox,
+			java.lang.String stringTextArea,
+			java.math.BigInteger bigIntegerIntegerBox,
+			java.lang.Byte byteIntegerBox, java.lang.Integer integerIntegerBox,
+			java.lang.Long longIntegerBox, java.lang.Short shortIntegerBox,
+			java.math.BigDecimal bigDecimalDecimalBox,
+			java.lang.Double doubleDecimalBox, java.lang.Float floatDecimalBox,
+			java.lang.Boolean booleanCheckBox, java.util.Date dateDatePicker,
+			java.time.LocalDate localDateDatePicker,
+			java.time.LocalDateTime localDateTimeDatePicker,
+			java.time.LocalTime localTimeDatePicker,
+			java.time.OffsetDateTime offsetDateTimeDatePicker,
+			java.lang.Double doubleSlider, java.lang.Integer integerSlider,
+			java.math.BigDecimal bigDecimalListBox,
+			java.math.BigInteger bigIntegerListBox, java.lang.Byte byteListBox,
+			java.lang.Double doubleListBox, java.lang.Float floatListBox,
+			java.lang.Integer integerListBox, java.lang.Long longListBox,
+			java.lang.Short shortListBox, java.lang.String stringListBox,
+			java.math.BigDecimal bigDecimalRadioGroup,
+			java.math.BigInteger bigIntegerRadioGroup,
+			java.lang.Byte byteRadioGroup, java.lang.Double doubleRadioGroup,
+			java.lang.Float floatRadioGroup,
+			java.lang.Integer integerRadioGroup, java.lang.Long longRadioGroup,
+			java.lang.Short shortRadioGroup, java.lang.String stringRadioGroup) {
 		this.id = id;
-		this.BIGDECIMAL = BIGDECIMAL;
-		this.BIGINTEGER = BIGINTEGER;
-		this.BYTE = BYTE;
-		this.DOUBLE = DOUBLE;
-		this.FLOAT = FLOAT;
-		this.INTEGER = INTEGER;
-		this.LONG = LONG;
-		this.SHORT = SHORT;
-		this.STRING = STRING;
+		this.stringTextBox = stringTextBox;
+		this.characterTextBox = characterTextBox;
+		this.stringTextArea = stringTextArea;
+		this.bigIntegerIntegerBox = bigIntegerIntegerBox;
+		this.byteIntegerBox = byteIntegerBox;
+		this.integerIntegerBox = integerIntegerBox;
+		this.longIntegerBox = longIntegerBox;
+		this.shortIntegerBox = shortIntegerBox;
+		this.bigDecimalDecimalBox = bigDecimalDecimalBox;
+		this.doubleDecimalBox = doubleDecimalBox;
+		this.floatDecimalBox = floatDecimalBox;
+		this.booleanCheckBox = booleanCheckBox;
+		this.dateDatePicker = dateDatePicker;
+		this.localDateDatePicker = localDateDatePicker;
+		this.localDateTimeDatePicker = localDateTimeDatePicker;
+		this.localTimeDatePicker = localTimeDatePicker;
+		this.offsetDateTimeDatePicker = offsetDateTimeDatePicker;
+		this.doubleSlider = doubleSlider;
+		this.integerSlider = integerSlider;
+		this.bigDecimalListBox = bigDecimalListBox;
+		this.bigIntegerListBox = bigIntegerListBox;
+		this.byteListBox = byteListBox;
+		this.doubleListBox = doubleListBox;
+		this.floatListBox = floatListBox;
+		this.integerListBox = integerListBox;
+		this.longListBox = longListBox;
+		this.shortListBox = shortListBox;
+		this.stringListBox = stringListBox;
+		this.bigDecimalRadioGroup = bigDecimalRadioGroup;
+		this.bigIntegerRadioGroup = bigIntegerRadioGroup;
+		this.byteRadioGroup = byteRadioGroup;
+		this.doubleRadioGroup = doubleRadioGroup;
+		this.floatRadioGroup = floatRadioGroup;
+		this.integerRadioGroup = integerRadioGroup;
+		this.longRadioGroup = longRadioGroup;
+		this.shortRadioGroup = shortRadioGroup;
+		this.stringRadioGroup = stringRadioGroup;
 	}
 
 }
