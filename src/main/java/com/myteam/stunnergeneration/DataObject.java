@@ -7,29 +7,129 @@ package com.myteam.stunnergeneration;
 @javax.persistence.Entity
 public class DataObject implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    @javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.AUTO, generator = "DATAOBJECT_ID_GENERATOR")
-    @javax.persistence.Id
-    @javax.persistence.SequenceGenerator(sequenceName = "DATAOBJECT_ID_SEQ", name = "DATAOBJECT_ID_GENERATOR")
-    private java.lang.Long id;
+	@javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.AUTO, generator = "DATAOBJECT_ID_GENERATOR")
+	@javax.persistence.Id
+	@javax.persistence.SequenceGenerator(sequenceName = "DATAOBJECT_ID_SEQ", name = "DATAOBJECT_ID_GENERATOR")
+	private java.lang.Long id;
 
-    public DataObject() {
-    }
-    
-    public DataObject(java.lang.Long id) {
-        this.id = id;
-    }
+	private java.math.BigDecimal BIGDECIMAL;
 
-    public java.lang.Long getId() {
-        return this.id;
-    }
-    
-    public void setId(java.lang.Long id) {
-        this.id = id;
-    }
+	private java.math.BigInteger BIGINTEGER;
 
+	private java.lang.Byte BYTE;
 
+	private java.lang.Double DOUBLE;
 
+	private java.lang.Float FLOAT;
+
+	private java.lang.Integer INTEGER;
+
+	private java.lang.Long LONG;
+
+	private java.lang.Short SHORT;
+
+	private java.lang.String STRING;
+
+	public DataObject() {
+	}
+
+	public java.lang.Long getId() {
+		return this.id;
+	}
+
+	public void setId(java.lang.Long id) {
+		this.id = id;
+	}
+
+	public java.math.BigDecimal getBIGDECIMAL() {
+		return this.BIGDECIMAL;
+	}
+
+	public void setBIGDECIMAL(java.math.BigDecimal BIGDECIMAL) {
+		this.BIGDECIMAL = BIGDECIMAL;
+	}
+
+	public java.math.BigInteger getBIGINTEGER() {
+		return this.BIGINTEGER;
+	}
+
+	public void setBIGINTEGER(java.math.BigInteger BIGINTEGER) {
+		this.BIGINTEGER = BIGINTEGER;
+	}
+
+	public java.lang.Byte getBYTE() {
+		return this.BYTE;
+	}
+
+	public void setBYTE(java.lang.Byte BYTE) {
+		this.BYTE = BYTE;
+	}
+
+	public java.lang.Double getDOUBLE() {
+		return this.DOUBLE;
+	}
+
+	public void setDOUBLE(java.lang.Double DOUBLE) {
+		this.DOUBLE = DOUBLE;
+	}
+
+	public java.lang.Float getFLOAT() {
+		return this.FLOAT;
+	}
+
+	public void setFLOAT(java.lang.Float FLOAT) {
+		this.FLOAT = FLOAT;
+	}
+
+	public java.lang.Integer getINTEGER() {
+		return this.INTEGER;
+	}
+
+	public void setINTEGER(java.lang.Integer INTEGER) {
+		this.INTEGER = INTEGER;
+	}
+
+	public java.lang.Long getLONG() {
+		return this.LONG;
+	}
+
+	public void setLONG(java.lang.Long LONG) {
+		this.LONG = LONG;
+	}
+
+	public java.lang.Short getSHORT() {
+		return this.SHORT;
+	}
+
+	public void setSHORT(java.lang.Short SHORT) {
+		this.SHORT = SHORT;
+	}
+
+	public java.lang.String getSTRING() {
+		return this.STRING;
+	}
+
+	public void setSTRING(java.lang.String STRING) {
+		this.STRING = STRING;
+	}
+
+	public DataObject(java.lang.Long id, java.math.BigDecimal BIGDECIMAL,
+			java.math.BigInteger BIGINTEGER, java.lang.Byte BYTE,
+			java.lang.Double DOUBLE, java.lang.Float FLOAT,
+			java.lang.Integer INTEGER, java.lang.Long LONG,
+			java.lang.Short SHORT, java.lang.String STRING) {
+		this.id = id;
+		this.BIGDECIMAL = BIGDECIMAL;
+		this.BIGINTEGER = BIGINTEGER;
+		this.BYTE = BYTE;
+		this.DOUBLE = DOUBLE;
+		this.FLOAT = FLOAT;
+		this.INTEGER = INTEGER;
+		this.LONG = LONG;
+		this.SHORT = SHORT;
+		this.STRING = STRING;
+	}
 
 }
